@@ -5,51 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Kumar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/aboutme.css">
+    <link rel="stylesheet" href="./styles/skills.css">
 </head>
 
 <body>
 
     <!-- nav bar here -->
-    <div class="nav">
-        <div class="logo">
-            <p>Abhinav Kumar</p>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light w-100 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Abhinav Kumar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="links">
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-        </div>
-    </div>
+    </nav>
+
 
     <!-- home page starts from here -->
 
-    <div class="home-page" id="home">
-        <div class="left">
-            <img src="https://avatars.githubusercontent.com/u/97444941?v=4" alt="">
-        </div>
-        <div class="right">
-            <div class="texts">
-                <p>Hello I'm <span>Abhinav Kumar</span></p>
-                <p>I'm Software Engineer</p>
 
-                <div class="right-btn">
-                    <a href="">resume</a>
-                    <a href="">github</a>
-                    <a href="">linkedin</a>
+    <div class="main-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="container">
+                        <img class="rounded-circle shadow-4-strong" alt="avatar2"
+                            src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="container">
+                        <p>HELLO!, I'M</p>
+                        <h1 class="p-2">ABHINAV KUMAR</h1>
+                        <h4>Software Engineer</h4>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-primary shadow-lg">resume</button>
+                            <a href="https://www.linkedin.com/in/abhinav3254/" target="_blank"><img
+                                    src="./images/linkedin-ar21.svg" alt="" width="100px"></a>
+
+                            <a href="https://www.github.com/abhinav3254" target="_blank"><img
+                                    src="./images/github-ar21.svg" alt="" width="100px"></a>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- About Me page starts here -->
-    <div class="about-me" id="about">
-        <p class="intro-about">About Me</p>
+    <div class="container" id="about">
+        <p class="intro-about text-center">About Me</p>
         <p class="limits">love to push limits....</p>
         <p class="Greetings">Greetings to all the viewers! I am a techie who loves to build new web applications and
             arrive with new
@@ -58,19 +94,377 @@
             challenges and
             optimizing algorithmic efficiency. My enthusiasm stems from recognizing their pivotal role in crafting
             elegant, high-performance software solutions. Whether it's devising optimal sorting algorithms or
-            implementing intricate data structures, I revel in honing my problem-solving skills and refining my code for
-            maximum speed and memory utilization. This zeal pushes me to stay abreast of the latest DSA advancements,
-            continually enhancing my skills to create innovative and effective solutions that drive superior software
+            implementing intricate data structures, I revel in honing my problem-solving skills and refining my code
+            for
+            maximum speed and memory utilization. This zeal pushes me to stay abreast of the latest DSA
+            advancements,
+            continually enhancing my skills to create innovative and effective solutions that drive superior
+            software
             performance.</p>
-        <p class="backend">I thrive on building the foundation that powers seamless user experiences. With a keen eye
+        <p class="backend">I thrive on building the foundation that powers seamless user experiences. With a keen
+            eye
             for optimizing
             performance and ensuring data security, I revel in crafting efficient server-side architectures. From
             designing robust APIs to managing databases, I relish the intricacies of coding logic that enable
-            applications to function flawlessly. My enthusiasm stems from the satisfaction of creating scalable systems
-            that handle complex tasks and contribute to the overall success of projects. Constantly exploring emerging
+            applications to function flawlessly. My enthusiasm stems from the satisfaction of creating scalable
+            systems
+            that handle complex tasks and contribute to the overall success of projects. Constantly exploring
+            emerging
             technologies and refining my skills, I am dedicated to delivering reliable, high-quality, and innovative
             backend solutions.</p>
     </div>
+
+    <!-- skills sections from here -->
+
+    <div class="container" id="skills">
+        <p class="intro-about text-center">skills</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/java-horizontal.svg" alt="">
+                        <h4>Java</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/hibernate.svg" alt="">
+                        <h4>hibernate</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/springio.svg" alt="">
+                        <h4>spring</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/node.svg" alt="">
+                        <h4>node</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/angular-ar21.svg" alt="">
+                        <h4>angular</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/linux.svg" alt="">
+                        <h4>linux</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/mysql-horizontal.svg" alt="">
+                        <h4>mysql</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/mongodb-ar21.svg" alt="">
+                        <h4>node</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/github-ar21.svg" alt="">
+                        <h4>github</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/opensource.svg" alt="">
+                        <h4>opensource</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/w3_html5-ar21.svg" alt="">
+                        <h4>html5</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/w3_css-ar21.svg" alt="">
+                        <h4>css</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/javascript-horizontal.svg" alt="">
+                        <h4>javascript</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/android-ar21.svg" alt="">
+                        <h4>android</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/flutterio-ar21.svg" alt="">
+                        <h4>flutter</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="one">
+                        <img src="./images/sqlite-ar21.svg" alt="">
+                        <h4>sqlite</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Projects starts from here -->
+
+    <div class="container" id="projects" style="margin-top: 20px">
+        <h1 class="intro-about text-center" style="margin: 20px">Projects</h1>
+
+        <!-- First project starts from here -->
+
+
+        <div class="row text-center">
+            <div class="col-md-6">
+                <img class="" src="https://via.placeholder.com/824x552" width="100%">
+            </div>
+            <div class="col-md-6">
+
+                <h1 class="text-center">Blog Website(SHOWTIME)</h1>
+
+                <p>
+                    This comprehensive full-stack project boasts a Java backend, meticulously crafted with the power of
+                    Spring and Spring Boot. Leveraging JWT for robust authentication and authorization, it ensures
+                    top-tier security. On the frontend, Angular takes the lead, delivering an intuitive user interface.
+                    The synergy between these technologies creates a seamless user experience. From database management
+                    to API integration, every aspect is finely tuned. With an unwavering commitment to innovation, this
+                    project encapsulates the epitome of modern full-stack development, combining Java's strength with
+                    Spring, Spring Boot, JWT, and Angular's dynamism to deliver an exceptional end-to-end solution.
+                </p>
+                <h2>Tools & Technologies</h2>
+                <div class="container">
+                    <img src="./images/angular-ar21.svg" alt="" width="100px">
+                    <img src="./images/java-horizontal.svg" alt="" width="100px">
+                    <img src="./images/springio.svg" alt="" width="100px">
+                    <img src="./images/mysql-horizontal.svg" alt="" width="100px">
+                    <img src="./images/jwtio-json-web-token.svg" alt="" width="100px">
+                </div>
+
+                <div class="conatiner">
+                    <a href="" class="btn btn-outline-dark">github link</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- second project starts from here -->
+        <hr />
+
+        <div class="row text-center">
+
+            <div class="col-md-6">
+
+                <h1 class="text-center">GITA API</h1>
+
+                <p>
+                    Crafted with Node.js, the Geeta API stands as a testament to seamless integration of technology and
+                    spirituality. This API offers instant access to the profound teachings of the Bhagavad Gita,
+                    delivering verses and insights programmatically. Leveraging the power of Node.js, the API ensures
+                    swift and reliable responses, facilitating easy incorporation into diverse applications. With a
+                    focus on scalability and performance, the Geeta API allows developers to seamlessly integrate
+                    spiritual wisdom into their projects. Through this harmonious fusion of technology and ancient
+                    philosophy, users can access the timeless teachings of the Bhagavad Gita, fostering a deeper
+                    connection between code and consciousness.
+                </p>
+                <h2>Tools & Technologies</h2>
+                <div class="container">
+                    <img src="./images/node.svg" alt="" width="100px">
+                </div>
+
+                <div class="conatiner">
+                    <a href="" class="btn btn-outline-dark">github link</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <img class="" src="https://via.placeholder.com/824x552" width="100%">
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Third project starts from here -->
+
+
+        <div class="row text-center">
+
+            <div class="col-md-6">
+                <img class="" src="https://via.placeholder.com/824x552" width="100%">
+            </div>
+
+            <div class="col-md-6">
+
+                <h1 class="text-center">Accountify</h1>
+
+                <p>
+                    Accountify, a dynamic Android money tracking application, revolutionizes financial management.
+                    Seamlessly designed, it empowers users to effortlessly monitor their expenditures and earnings. With
+                    intuitive UI/UX, it simplifies transaction logging and categorization, promoting financial
+                    awareness. Accountify enables custom budget creation and real-time expense insights, aiding prudent
+                    financial decisions. Through insightful graphs and summaries, users gain comprehensive views of
+                    their financial health. Security is paramount, ensuring encrypted data storage. This app redefines
+                    personal finance, merging convenience with effective money management. From daily spending to
+                    long-term financial goals, Accountify is the ultimate companion for achieving fiscal stability and
+                    control right at users' fingertips.
+                </p>
+                <h2>Tools & Technologies</h2>
+                <div class="container">
+                    <img src="./images/android-ar21.svg" alt="" width="100px">
+                    <img src="./images/sqlite-ar21.svg" alt="" width="100px">
+                </div>
+                <div class="conatiner">
+                    <a href="" class="btn btn-outline-dark">github link</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Fourth project starts from here -->
+        <hr />
+
+        <div class="row text-center">
+
+            <div class="col-md-6">
+
+                <h1 class="text-center">NEWS TAK</h1>
+
+                <p>
+                    "News Tak," my innovative Android news application, revolutionizes information consumption.
+                    Seamlessly designed, it provides users with a comprehensive platform to stay informed. With a
+                    user-friendly interface, users can explore diverse news categories, from global events to niche
+                    interests. Real-time updates ensure the latest news is always at their fingertips. The app's
+                    intuitive navigation and personalized features offer a tailored news experience. Harnessing the
+                    power of Android, "News Tak" delivers a seamless blend of aesthetics and functionality, catering to
+                    both casual readers and news enthusiasts. Embracing modern design and cutting-edge technology, it
+                    redefines the way users engage with news on their devices.
+                </p>
+                <h2>Tools & Technologies</h2>
+                <div class="container">
+                    <img src="./images/android-ar21.svg" alt="" width="100px">
+                    <img src="./images/sqlite-ar21.svg" alt="" width="100px">
+                </div>
+
+                <div class="conatiner">
+                    <a href="" class="btn btn-outline-dark">github link</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <img class="" src="https://via.placeholder.com/824x552" width="100%">
+            </div>
+        </div>
+
+        <hr />
+
+    </div>
+
+
+    <!-- contact me form -->
+    <div class="container" id="contact" style="margin: 20rem 0px;">
+        <h1 class="intro-about text-center" style="margin: 20px">Contact</h1>
+
+
+        <div class="row text-center">
+
+            <div class="col-md-6">
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+
+            <div class="col-md-6" style="border-left: 2px solid black;">
+                <p>
+                    Should you have any queries, proposals, or opportunities to share, don't hesitate to contact me
+                    using this form. I'll promptly respond to your message. Furthermore, I'm open to collaborative
+                    ventures.
+                </p>
+                <p>
+                    Feel free to connect, and together, let's embark on an exciting journey to create
+                    something remarkable.
+                </p>
+                <h4>You can also reach me through social media</h4>
+                <div class="container">
+                    <a href="https://www.facebook.com/profile.php?id=100013606111170" target="_blank"><img
+                            src="./images/facebook-ar21.svg" alt="" width="100px"></a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100013606111170" target="_blank"><img
+                            src="./images/instagram-wordmark.svg" alt="" width="100px"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013606111170" target="_blank"><img
+                            src="./images/twitter-ar21.svg" alt="" width="100px"></a>
+
+                    <a href="https://www.linkedin.com/in/abhinav3254/" target="_blank"><img
+                            src="./images/linkedin-ar21.svg" alt="" width="100px"></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+
+    <footer class="bg-light text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://github.com/abhinav3254" target="_blank">Abhinav Kumar</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 </body>
 

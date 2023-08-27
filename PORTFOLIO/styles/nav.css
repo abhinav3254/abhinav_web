@@ -1,16 +1,17 @@
-.nav {
+.nav1 {
     /* fixing nav bar at top code */
     position: fixed;
     width: 100%;
     overflow: hidden;
     /* background-color: rgba(255, 255, 255, 0.9); */
     z-index: 10;
+    /* fixing nav bar ends here */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(163, 240, 239);
     padding: 10px 20px;
-    margin: 5px 10px;
+    margin: 5px 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
@@ -18,21 +19,21 @@
     height: 5%;
 }
 
-.nav:hover {
+.nav1:hover {
     opacity: 0.8;
 }
 
-.logo {
+.logo1 {
     flex: 1;
     text-align: center;
 }
 
-.logo p {
+.logo1 p {
     padding: 10px 20px;
     font-family: cursive;
 }
 
-.links {
+.links1 {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -40,7 +41,7 @@
 }
 
 
-.links a {
+.links1 a {
     text-decoration: none;
     color: black;
     transition: all 0.5s;
@@ -48,7 +49,7 @@
     border-radius: 10px;
 }
 
-.links a:hover {
+.links1 a:hover {
     background-color: white;
     color: red;
 }

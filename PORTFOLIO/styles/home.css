@@ -1,0 +1,61 @@
+.home-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.left img {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.right {
+    flex: 1;
+    position: relative;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.right p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.right p span {
+    color: red;
+}
+
+.right-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.right-btn a {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
